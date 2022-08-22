@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/logo192.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <link rel="stylesheet" href="node_modules/xterm/css/xterm.css" />
+    <script src="node_modules/xterm/lib/xterm.js"></script>
+    <title>INC1N3R4T0R</title>
+  </head>
+
+  <body oncontextmenu="return false;">
+     <div class="main-block" id="main-block">
+        <!------------------>
+        <div id="inputer" class="inputer">
+          <div>
+            <span class="c3">guest</span><span class="c2">@</span><span class="c4">inc1n3r4t0r.com</span><span class="c2">:$ ~ </span>
+            <span> <input id="input1" type="text" autofocus onload="focusInput()" onchange="executeCommand()" placeholder="Type 'banner' to begin"/></span>
+          </div>
+        </div>
+        <!------------------>
+     </div>
+
+     <script>
+      //--------------------------------//
+
+      function focusInput() {
+          document.getElementById("input1").focus();
+      }
+
+      //--------------------------------//
+
+      function displayInputer(){
+        var inputerline = '<div> <span class="c3">guest</span><span class="c2">@</span><span class="c4">inc1n3r4t0r.com</span><span class="c2">:$ ~ </span><span> <input id="input1" type="text" autofocus onload="focusInput()" onchange="executeCommand()"></span></div>';
+        inputerline = $.parseHTML(inputerline);
+       $('#inputer').append(inputerline);
+       $('#input1').attr("placeholder","Type 'banner' or 'help'");
+       $('#input1').focus();
+      }
+
+      //--------------------------------//
+
+      function displayBanner(){
+        const p = document.createElement("div");
+        const e = document.getElementById("inputer");
+
+        p.setAttribute('id','banner-box');
+        e.appendChild(p);
+        
+        $("#banner-box").load("banner.html");
+
+        //removing ID for another banner to use
+         $("#banner-box").removeAttr('id');
+      }
+
+      //--------------------------------//
+
+      function displayHelp(){
+        const p = document.createElement("div");
+        const e = document.getElementById("inputer");
+
+        p.setAttribute('id','help-box');
+        e.appendChild(p);
+        
+        $("#help-box").load("help.html");
+
+        //removing ID for another help to use
+        $("#help-box").removeAttr('id');
+      }
+      //--------------------------------//
+
+      function displayAbout(){
+        const p = document.createElement("div");
+        const e = document.getElementById("inputer");
+
+        p.setAttribute('id','about-box');
+        e.appendChild(p);
+        
+        $("#about-box").load("about.html");
+
+        //removing ID for another about to use
+        $("#about-box").removeAttr('id');
+      }
+
+      //--------------------------------//
+
+      function displayCowsay(){
+        const p = document.createElement("div");
+        const e = document.getElementById("inputer");
+
+        p.setAttribute('id','cow-box');
+        e.appendChild(p);
+        
+        $("#cow-box").load("cowsay.html");
+
+        //removing ID for another cow to use
+        $("#cow-box").removeAttr('id');
+      }
+
+      //--------------------------------//
+    
+        function executeCommand(){
+        var x = document.getElementById("input1").value;
+        
+        //Changing the color of input received
+        $('#input1').replaceWith(x);
+        $('#input1').css('color','#fbf1c7');
+        //Replacing the input field with its answer to perma-freeze it
+
+        //removing ID for another inputer to use
+        $("#input1").removeAttr('id');
+        
+
+        const para = document.createElement("span");
+        const element = document.getElementById("inputer");
+
+        //SETTING MAIN CONDITIONS
+        if (x=='instagram') //instagram
+        {        
+          para.classList.add("c1");
+          
+          setTimeout(() => {
+            para.textContent = 'Opening Instagram.';
+            element.appendChild(para);
+          }, 500);
+
+          setTimeout(() => {
+            para.textContent = 'Opening Instagram..';
+            element.appendChild(para);
+          }, 1500);
+
+          setTimeout(() => {
+            para.textContent = 'Opening Instagram...';
+            element.appendChild(para);
+          }, 2000);
+
+          setTimeout(() => {
+            window.open("https://instagram.com/incinerator.codes","_blank");
+          }, 3500);
+          
+          setTimeout(() => {
+            para.textContent = 'Successfully redirected to Instagram';
+            element.appendChild(para);
+          }, 5500);
+
+          setTimeout(() => {
+            displayInputer();
+          }, 6500);
+        }
+
+        else if (x=='linkedin') //linkedin
+        {  
+          para.classList.add("c1");
+          
+          setTimeout(() => {
+            para.textContent = 'Fetching Linkedin.';
+            element.appendChild(para);
+          }, 500);
+
+          setTimeout(() => {
+            para.textContent = 'Fetching Linkedin..';
+            element.appendChild(para);
+          }, 1500);
+
+          setTimeout(() => {
+            para.textContent = 'Fetching Linkedin...';
+            element.appendChild(para);
+          }, 2000);
+
+          setTimeout(() => {
+            window.open("https://www.linkedin.com/in/aniket-chandanshive-24186b229/","_blank");
+          }, 3500);
+          
+          setTimeout(() => {
+            para.textContent = 'Successfully redirected to Linkedin';
+            element.appendChild(para);
+          }, 5500);
+
+          setTimeout(() => {
+            displayInputer();
+          }, 6500);    
+        }
+
+        else if (x=='github') //github
+        {  
+          para.classList.add("c1");
+          
+          setTimeout(() => {
+            para.textContent = 'Fetching Github.';
+            element.appendChild(para);
+          }, 500);
+
+          setTimeout(() => {
+            para.textContent = 'Fetching Github..';
+            element.appendChild(para);
+          }, 1500);
+
+          setTimeout(() => {
+            para.textContent = 'Fetching Github...';
+            element.appendChild(para);
+          }, 2000);
+
+          setTimeout(() => {
+            window.open("https://github.com/INC1N3R4T0R","_blank");
+          }, 3500);
+          
+          setTimeout(() => {
+            para.textContent = 'Successfully redirected to Github';
+            element.appendChild(para);
+          }, 5500);
+
+          setTimeout(() => {
+            displayInputer();
+          }, 6500);    
+        }
+
+        else if (x=='discord') //github
+        {  
+          para.classList.add("c1");
+          
+          setTimeout(() => {
+            para.textContent = 'Fetching Discord.';
+            element.appendChild(para);
+          }, 500);
+
+          setTimeout(() => {
+            para.textContent = 'Fetching Discord..';
+            element.appendChild(para);
+          }, 1500);
+
+          setTimeout(() => {
+            para.textContent = 'Fetching Discord...';
+            element.appendChild(para);
+          }, 2000);
+
+          setTimeout(() => {
+            window.open("https://discordapp.com/users/INCINERATOR#7165","_blank");
+          }, 3500);
+          
+          setTimeout(() => {
+            para.textContent = 'Successfully redirected to Discord';
+            element.appendChild(para);
+          }, 5500);
+
+          setTimeout(() => {
+            displayInputer();
+          }, 6500);    
+        }
+
+        else if (x=='clear'){
+           window.top.location.reload(true);
+        }
+
+        else if (x=='banner'){        
+          displayBanner();
+          $("#input1").removeAttr('id');  
+          displayInputer();
+        }
+
+        else if (x=='help'){
+          displayHelp();
+          displayInputer();
+        }
+
+        else if (x=='whoami'){
+          para.textContent = 'guest';
+          para.setAttribute('class','c5');
+          element.appendChild(para);
+          displayInputer();
+        }
+
+        else if (x=='email'){
+          para.textContent = 'aniket.chandanshive@proton.me';
+          para.setAttribute('class','c5');
+          element.appendChild(para);
+          displayInputer();
+        }
+
+        else if (x=='cowsay'){
+          displayCowsay();
+          displayInputer();
+        }
+
+        else if (x=='about'){
+          displayAbout();
+          displayInputer();
+        }
+
+        else{ //Default wrong command line
+          para.textContent = "bash: Unable to locate '"+x+ "'. Type 'help' to get a list of commands.";
+          para.classList.add('error');
+          element.appendChild(para);
+
+          displayInputer();
+        }
+      }
+      
+      //--------------------------------//
+    </script>
+  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+  </body>
+</html>

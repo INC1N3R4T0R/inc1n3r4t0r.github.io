@@ -1,0 +1,86 @@
+@font-face {
+    font-family: font-one;
+    src: url('CascadiaCode.ttf');
+  }
+  
+  body {
+    margin: 0;
+    font-family: font-one;
+  }
+  
+  :root{
+    --bg1:#1d2021; 
+    --c1: #eaa549;
+    --c2: #928374;
+    --c3: #8ec07c;
+    --c4: #b16286;
+    --c5: #fbf1c7;
+    --c6: #458588;
+    --c7: #d65d0e;
+    --c8: #d3869b;
+  }
+  
+  .c1{
+    color: var(--c1);
+  }
+  .c2{
+    color: var(--c2);
+  }
+  .c3{
+    color: var(--c3);
+  }
+  .c4{
+    color: var(--c4);
+  }
+  .c5{
+    color: var(--c5);
+  }
+  .c6{
+    color: var(--c6);
+  }
+  .c7{
+    color: var(--c7);
+  }
+  .c8{
+    color: var(--c8);
+  }
+  .error{
+    color: #fb4934;
+  }
+  
+  body{
+    background: var(--bg1);
+  }
+  
+  .main-block{
+    border:2px solid var(--c1);
+    border-radius: 5px;
+    position: fixed;
+    margin-left: 0.5%;
+    margin-top: 0.5%;
+    height: 97.5%;
+    width: 98.5%;
+    overflow-y: scroll;
+  }
+  
+  .inputer{
+    padding: 2%;
+    color: #fff;
+    font-size: 1em;
+    display: flex;
+    flex-direction: column;
+    line-height: 25px;
+  }
+  
+  .inputer input{
+    background: transparent;
+    border: 0;
+    color: var(--c5);
+    font-size: 1em;
+    font-family: font-one;
+  }
+  
+  input:focus{
+    outline-width: 0;
+  }
+  
