@@ -5,7 +5,7 @@ A portfolio website created with simple HTML, CSS and Javascript/Jquery.
 
 ## Motivation
 
-As an IT student in the field of Cybersecurity and Server Administration, this website provides a coup d'œil for individuals from other fields into the realm of extensive terminal usage. 
+As an IT student in the field of Cybersecurity and Server Administration, this website helps me provide a coup d'œil for individuals from other fields into the realm of extensive terminal usage where GUIs are underrated. 
 
 
 ## Start guide
@@ -16,9 +16,13 @@ As an IT student in the field of Cybersecurity and Server Administration, this w
     ```bash
     npm start
     ```
-3. That's it!
+3. That's it! (Yes, it's that minimal)
 
 The page will reload automatically when you make changes.
+
+## Contributions
+
+Huge shoutout to https://github.com/m4tt72 for the inspiration of this website.
 
 ## Contributions
 
