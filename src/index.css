@@ -7,6 +7,10 @@
     margin: 0;
     font-family: font-one;
   }
+
+  ::-webkit-scrollbar{
+    width:0;
+  }
   
   :root{
     --bg1:#1d2021; 
