@@ -1,4 +1,4 @@
-# [INC1N3R4T0R](https://github.com/facebook/create-react-app)
+# INC1N3R4T0R |[ terminal](https://aniketchandanshive.netlify.app/)
 A portfolio website created with simple HTML, CSS and Javascript/Jquery.
 
 ![screenshot](/img/ss1.png)
